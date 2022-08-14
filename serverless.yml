@@ -1,5 +1,5 @@
 org: jshong0907
-app: fast-api
+#app: fast-api
 service: fast-api
 
 frameworkVersion: '3'
@@ -10,8 +10,8 @@ provider:
 
   ecr:
     images:
-      api_image:
-        path: ./api/
+      fast_api_image:
+        path: ./my-dev-api/
 
 package:
   individually: true
@@ -19,10 +19,7 @@ package:
 functions:
   ApiFunction:
     image:
-      name: api_image
+      name: fast_api_image
     events:
       - http: ANY /
       - http: ANY /{proxy+}
-
-plugins:
-  - serverless-python-requirements

@@ -3,3 +3,4 @@ __pycache__/
 api/dist/
 
 node_modules/
+.serverless/
