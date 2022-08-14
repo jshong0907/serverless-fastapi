@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "my-dev-api"
+name = "app"
 version = "0.1.0"
 description = ""
 authors = ["JoonShik <jshong0907@gmail.com>"]
