@@ -1,7 +1,7 @@
 """empty message
 
 Revision ID: 8c3002db12cf
-Revises: 
+Revises:
 Create Date: 2022-08-14 17:31:52.034265
 
 """

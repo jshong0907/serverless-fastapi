@@ -1,0 +1,28 @@
+org: jshong0907
+app: fast-api
+service: fast-api
+
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  region: ap-northeast-2
+
+  ecr:
+    images:
+      api_image:
+        path: ./api/
+
+package:
+  individually: true
+
+functions:
+  ApiFunction:
+    image:
+      name: api_image
+    events:
+      - http: ANY /
+      - http: ANY /{proxy+}
+
+plugins:
+  - serverless-python-requirements

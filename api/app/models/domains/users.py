@@ -1,4 +1,4 @@
-from app.models.domains.base_class import Base
+from api.app.models.domains.base_class import Base
 
 
 class User(Base):
